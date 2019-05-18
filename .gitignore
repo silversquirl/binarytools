@@ -1,0 +1,7 @@
+# Exclude all binaries
+*
+!*.*
+!mkfile
+
+# Exclude all objects
+*.o
