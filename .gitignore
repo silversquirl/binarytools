@@ -2,6 +2,7 @@
 *
 !*.*
 !mkfile
+!LICENSE
 
 # Exclude all objects
 *.o
