@@ -10,19 +10,19 @@ const char *varname = "data";
 size_t wrap = 16;
 
 void parse_args(int argc, char *argv[]) {
-	static const char *optstr = "hsv:b:";
+	static const char *optstr = "hsv:w:";
 	int opt;
 	while ((opt = getopt(argc, argv, optstr)) >= 0) {
 		switch (opt) {
 		case 'h':
-			printf("Usage: %s [-v VARNAME] [-b WRAP] <INPUT_FILE >OUTPUT_FILE\n", argv[0]);
+			printf("Usage: %s [-v VARNAME] [-w WRAP] <INPUT_FILE >OUTPUT_FILE\n", argv[0]);
 			exit(0);
 
 		case 'v':
 			varname = optarg;
 			break;
 
-		case 'b':
+		case 'w':
 			wrap = atoll(optarg);
 			break;
 		}
