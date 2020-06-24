@@ -1,8 +1,6 @@
 # Exclude all binaries
 *
-!*.*
-!mkfile
+!*.c
+!README.md
+!Makefile
 !LICENSE
-
-# Exclude all objects
-*.o

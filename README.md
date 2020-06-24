@@ -32,6 +32,14 @@ Usage: `binwrite [-b BASE] BYTE ... >OUTPUT_FILE\n`
 
 The BYTEs that are specified on the command line are parsed as numbers of the specified BASE (by default hexadecimal) and written to stdout as bytes.
 
+## datobj
+
+Creates an ELF object file from its input files
+
+Usage: `datobj FILE SYMBOL [FILE SYMBOL ...] >OBJECT`
+
+Each input file is dumped into the output ELF's `data` section, under its associated symbol name.
+
 ## headerdump
 
 Converts a binary file into a C header.

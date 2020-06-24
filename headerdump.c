@@ -38,7 +38,7 @@ void parse_args(int argc, char *argv[]) {
 }
 
 int process(FILE *in, FILE *out) {
-	size_t count;
+	size_t count = 0;
 	int ch;
 
 	/* Write the header */
